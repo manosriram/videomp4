@@ -1,0 +1,82 @@
+
+Lets try parsing a single box to see whats in there
+
+box:ftyp
+		size:4
+		type:4
+		data:value(size)
+
+box:moov
+		size:4
+		type:4
+		data:value(size)
+		
+		box:mvhd
+				size:4
+				type:4
+				data:value(size)
+		
+		box:trak
+				size:4
+				type:4
+				data:value(size)
+				
+				box:tkhd
+						size:4
+						type:4
+						data:value(size)
+				
+				box:mdia
+						size:4
+						type:4
+						data:value(size)
+						
+						box:mdhd
+								size:4
+								type:4
+								data:value(size)
+						
+						box:hdlr
+								size:4
+								type:4
+								data:value(size)
+						
+						box:minf
+								size:4
+								type:4
+								data:value(size)
+								
+								box:stbl
+										size:4
+										type:4
+										data:value(size)
+										
+										box:stsd
+												size:4
+												type:4
+												data:value(size)
+										
+										box:stts
+												size:4
+												type:4
+												data:value(size)
+										
+										box:stsc
+												size:4
+												type:4
+												data:value(size)
+										
+										box:stsz
+												size:4
+												type:4
+												data:value(size)
+										
+										box:stco
+												size:4
+												type:4
+												data:value(size)
+
+box:mdat
+		size:4
+		type:4
+		data:value(size)
